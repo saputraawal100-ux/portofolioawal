@@ -1,0 +1,350 @@
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PORTOFOLIO AWAL</title>
+        <link rel="stylesheet" href="tooplate-graphite-creative.css">
+
+        <style>
+     /* FOTO BERANDA SEDANG & TIDAK TERPOTONG */
+.slide img {
+    width: 1200px;
+    height: 500px;          /* lebih kecil (sedang) */
+    object-fit: contain;    /* tidak terpotong */
+    border-radius: 10px;
+}
+
+/* SAMAKAN SEMUA GAMBAR PORTFOLIO */
+.portfolio-item img {
+    width: 100%;
+    height: 250px;       /* samakan tinggi */
+
+    border-radius: 10px;
+}
+    
+
+    /* CONTACT TENGAH */
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    /* ICON LEBIH BESAR */
+    .contact-item img {
+        width: 70px;   /* sebelumnya 40px */
+        transition: 0.3s;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .contact-item img:hover {
+        transform: scale(1.2);
+    }
+
+    /* RAPIKAN JARAK */
+    .contact-details {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+    /* TAMBAHAN GRID SKILL */
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+            
+            /* UKURAN SEDANG */
+            body {
+                font-size: 15px;
+            }
+
+            h1 { font-size: 24px; }
+            h2 { font-size: 20px; }
+            h3 { font-size: 17px; }
+
+            p {
+                font-size: 30px;
+                line-height: 1.7;
+            }
+
+            .service-number {
+                font-size: 18px;
+                opacity: 0.7;
+            }
+
+            /* CONTACT */
+            .contact-details {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                margin-top: 20px;
+            }
+
+            .contact-item {
+                text-align: center;
+            }
+
+            .contact-item img {
+                transition: 0.3s;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            .contact-item img:hover {
+                transform: scale(1.2);
+            }
+/* SAMAKAN GRID SKILL & PROJECT */
+#portfolio .portfolio-grid,
+#about .portfolio-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    width: 100%;
+}
+
+/* HILANGKAN PENGARUH STYLE TEMPLATE */
+#about .portfolio-container {
+    all: unset;
+}
+
+/* BIKIN LEBAR SAMA */
+#about .portfolio-grid {
+    max-width: 1000px;
+    margin: auto;
+}
+        </style>
+    </head>
+
+    <body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo-area" onclick="scrollToTop(); return false;">
+                <div class="logo-vector">PA</div>
+                <div class="logo-text">
+                    <h1>SELAMAT DATANG DI PORTOFOLIO AWAL</h1>
+                    <p>SALAM KENAL</p>
+                </div>
+            </a>
+
+            <nav>
+                <a href="#home" class="active">Beranda</a>
+                <a href="#services">Tentang Saya</a>
+                <a href="#portfolio">Skill (Kemampuan) </a>
+                <a href="#about">Portofolio Project</a>
+                <a href="#contact">Kontak Saya</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+    <!-- HERO -->
+    <section id="home" class="section-hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-line"></div>
+                <h2>BERANDA</h2>
+                <p>Halo Semuanya,Perkenalkan nama saya AWALSAPUTRA. Website ini berfungsi sebagai media personal branding dan simulasi profesional dalam dunia startup dan bisnis digital</p>
+                <a href="#contact" class="cta-button">HUBUNGI SAYA</a>
+            </div>
+
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="awal.png" alt="Design workspace">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG SAYA -->
+    <section id="services" class="section-services">
+        <div class="services-container">
+            <h2 class="section-title">TENTANG SAYA</h2>
+
+            <div class="services-grid">
+
+                <!-- BIODATA -->
+                <div class="service-card">
+                    <div class="service-number">.01</div>
+                    <h3>BIODATA</h3>
+                    <p>
+                        NAMA : AWAL SAPUTRA <br>
+                        TEMPAT/TANGGAL LAHIR : TANGERANG, 08 AGUSTUS 2002 <br>  
+                        JENIS KELAMIN : LAKI - LAKI <br>    
+                        AGAMA : ISLAM<br>
+                        ALAMAT : JL.WARNASARI 2 NO.40 RT.005/02 KELURAHAN SUKASARI KECAMATAN TANGERANG KOTA TANGERANG
+                    </p>
+                </div>
+
+                <!-- PENDIDIKAN -->
+                <div class="service-card">
+                    <div class="service-number">.02</div>
+                    <h3>PENDIDIKAN</h3>
+                    <p>
+                        SEKOLAH DASAR NEGERI TANGERANG 2 : 2008 - 2014 <br>
+                        SEKOLAH MENENGAH PERTAMA NEGERI 17 TANGERANG : 2014 - 2017 <br>
+                        SEKOLAH MENENGAH KEJURUAN LAB BUSINESS SCHOOL TANGERANG : 2018 - 2021 <br> 
+                    </p>
+                </div>
+
+                <!-- MINAT -->
+                <div class="service-card">
+                    <div class="service-number">.03</div>
+                    <h3>MINAT DAN KEAHLIAN</h3>
+                    <p>
+                        1.  GAME E SPORT<br>
+                        2. FUTSAL <br>
+                        3. BILIARD   <br>
+                        4. TRAVELING
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section-portfolio">  
+        <div class="portfolio-container">
+            <h2 class="section-title">SKILL (KEMAMPUAN) </h2>
+
+            <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="design.jpg" alt="">
+            <div class="portfolio-label">
+                <h3>Design Grafis</h3>
+                <p>Web Design & Development</p>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="data analisis.jpg" alt="">
+            <div class="portfolio-label">
+                <h3>Analisis Data</h3>
+                <p>Branding & Identity</p>
+            </div>
+        </div>
+
+        <!-- TAMBAHAN 1 -->
+        <div class="portfolio-item">
+            <img src="pemograman.jpg" alt="">
+            <div class="portfolio-label">
+                <h3>Pemrograman</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+
+        <!-- TAMBAHAN 2 -->
+        <div class="portfolio-item">
+            <img src="digital marketing.jpeg" alt="">
+            <div class="portfolio-label">
+                <h3>Digital Marketing</h3>
+                <p>Social Media & Branding</p>
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
+
+   <section id="about" class="section-about">
+    <h2 class="section-title">PORTOFOLIO PROJECT</h2>
+
+    <div class="portfolio-grid">
+
+        <div class="portfolio-item">
+            <img src="awalsnack.png" alt="">
+            <div class="portfolio-label">
+                <h3>Membuat Website E-Commerce</h3>
+                <p>Website ini bisa digunakan untuk simulasi jual beli online </p>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="bms.jfif" alt="">
+            <div class="portfolio-label">
+                <h3>Bussines Model Canvas</h3>
+                <p>menggambarkan model bisnis secara sederhana dalam 1 halaman. Biasanya dipakai untuk startup, bisnis digital, atau usaha kecil biar jelas arah bisnisnya.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="analisis awal snack.png" alt="">
+            <div class="portfolio-label">
+                <h3>Analisis Data</h3>
+                <p>Menganalisis data penjualan untuk menentukan tren grafik penjualan</p>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="ceminal.jpeg" alt="">
+            <div class="portfolio-label">
+                <h3>Digital Marketing</h3>
+                <p>Social Media Campaign</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>KONTAK SAYA</h3>
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+                        <label>Email</label><br>
+                        <a href="saputraawal100@gmail.com">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <label>WhatsApp</label><br>
+                        <a href="https://wa.me/6285773484653" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <label>Instagram</label><br>
+                        <a href="https://instagram.com/awalsaputra_08" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Creative Studio</p>
+    </footer>
+
+    <script src="tooplate-graphite-script.js"></script>
+
+    </body>
+    </html>
